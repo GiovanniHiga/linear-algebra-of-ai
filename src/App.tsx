@@ -2,6 +2,7 @@ import EmbeddingsSection from "@/sections/EmbeddingsSection";
 import MatrixSection from "@/sections/MatrixSection";
 import AttentionSection from "@/sections/AttentionSection";
 import GradientSection from "@/sections/GradientSection";
+import PipelineSection from "@/sections/PipelineSection";
 
 function Hero() {
   return (
@@ -29,6 +30,7 @@ function Hero() {
             ["02 matrices", "#matrices", "text-sky-300 border-sky-800"],
             ["03 attention", "#attention", "text-pink-300 border-pink-800"],
             ["04 learning", "#training", "text-amber-300 border-amber-800"],
+            ["05 prompt → answer", "#pipeline", "text-violet-300 border-violet-800"],
           ].map(([label, href, cls]) => (
             <a key={href} href={href} className={`rounded-full border px-4 py-2 hover:bg-zinc-900 ${cls}`}>
               {label}
@@ -65,6 +67,7 @@ export default function App() {
       <MatrixSection />
       <AttentionSection />
       <GradientSection />
+      <PipelineSection />
       <Footer />
     </div>
   );
